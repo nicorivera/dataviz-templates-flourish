@@ -25,3 +25,31 @@ body {
     text-wrap: balance;
   }
 }
+#my-wrapper {
+  margin: auto;
+  max-width: 1280px;
+}
+.fl-scrolly-step {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
+  max-width: 400px !important;
+}
+.fl-scrolly-step {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.fl-scrolly-step.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.flourish-scrolly-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flourish-text-steps {
+  position: relative;
+  margin-top: 20px;
+}

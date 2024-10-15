@@ -1,6 +1,9 @@
+'use client';
 import React from 'react';
+import FlourishViz from './flourishViz'
 
 const DataVizReportTemplate = () => {
+
   return (
     <div className="bg-[#f5f0e1] min-h-screen">
       {/* Hero Section */}
@@ -22,7 +25,7 @@ const DataVizReportTemplate = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 bg-blue-500 relative">
-          <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('/api/placeholder/1200/800')"}}></div>
+          <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('boca.jpg')"}}></div>
           <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col justify-between p-8">
             <h2 className="text-white text-9xl font-black">2024</h2>
             <div className="text-white">
@@ -51,31 +54,7 @@ const DataVizReportTemplate = () => {
         </div>
       </section>
 
-      {/* Innovative Techniques Section */}
-      <section className="py-20 px-8 md:px-20 text-black">
-        <h2 className="text-4xl font-bold mb-12">Técnicas Innovadoras</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <div className="h-64 bg-gray-300 mb-4">[Gráfico de Redes Neuronales]</div>
-            <h3 className="text-2xl font-bold mb-2">Visualización de Redes Neuronales</h3>
-            <p>Nuevas técnicas para representar visualmente la complejidad de las redes neuronales profundas, mejorando la interpretabilidad de modelos de IA.</p>
-          </div>
-          <div>
-            <div className="h-64 bg-gray-300 mb-4">[Mapa de Calor Dinámico]</div>
-            <h3 className="text-2xl font-bold mb-2">Mapas de Calor Dinámicos</h3>
-            <p>Evolución de los mapas de calor tradicionales hacia versiones dinámicas que muestran cambios en tiempo real, ideal para análisis de tendencias temporales.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Data Growth Visualization Section */}
-      <section className="py-20 px-8 md:px-20 bg-black text-white">
-        <h2 className="text-4xl font-bold mb-12">Crecimiento Exponencial de Datos</h2>
-        <div className="h-96 bg-gray-700 flex items-center justify-center text-2xl">
-          [Visualización del Crecimiento de Datos Globales]
-        </div>
-        <p className="mt-8 text-lg">El volumen de datos generados globalmente ha crecido exponencialmente en los últimos 5 años, desafiando nuestras capacidades de visualización y análisis.</p>
-      </section>
+     <FlourishViz />
 
       {/* Expert Insights Section */}
       <section className="py-20 px-8 md:px-20 text-black">
